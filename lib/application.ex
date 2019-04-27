@@ -9,7 +9,7 @@ defmodule GigalixirServerlessBroadway.Application do
       {GigalixirServerlessBroadway, []}
     ]
 
-    opts = [strategy: :one_for_one, name: GigalixirServerlessBroadway.Supervisor]
+    opts = [strategy: :one_for_one, name: GigalixirServerlessBroadway.BroadwaySupervisor]
     Supervisor.start_link(children, opts)
   end
 end

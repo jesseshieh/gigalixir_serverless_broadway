@@ -7,7 +7,7 @@ defmodule GigalixirServerlessBroadway do
   def start_link(_opts) do
     Logger.debug "starting GigalixirServerlessBroadway"
     Broadway.start_link(__MODULE__,
-      name: Module.concat(__MODULE__, "Example"),
+      name: __MODULE__,
       producers: [
         sqs: [
           module:
