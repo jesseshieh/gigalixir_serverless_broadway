@@ -28,3 +28,6 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env()}.exs"
+config :gigalixir_serverless_broadway,
+  aws_access_key_id: System.get_env("AWS_ACCESS_KEY_ID"),
+  aws_secret_access_key: System.get_env("AWS_SECRET_ACCESS_KEY")
